@@ -1,0 +1,553 @@
+$outline: 1px solid red;
+$container: calc(50% - 1140px / 2);
+$menu-color: #E8E8E8;
+$colorPink: #F16D7F;
+$backGround: no-repeat,
+contain;
+$boxWidth: 360px;
+
+@mixin headings {
+    font-family: 'Lato', sans-serif;
+    color: #222222;
+    font-weight: 400;
+}
+
+@mixin zeroMargin {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin button-bg {
+    background-color: transparent;
+    border: none;
+}
+
+@mixin header-icons {
+    @include button-bg();
+    color: $menu-color;
+    fill: $menu-color;
+    font-size: 32px;
+}
+
+@mixin brandBoxSize {
+    width: 45%;
+    min-height: 764px;
+    flex-basis: 50%;
+}
+
+@mixin color-offer {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+@mixin TextPar {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+@mixin transition {
+    transition-property: fill, color, background;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    &__search {
+        @include header-icons();
+        @include transition();
+        font-size: 28px;
+        align-self: flex-end;
+    }
+
+
+    &__menu {
+        @include header-icons();
+        @include transition();
+    }
+
+    &__profile {
+        @include header-icons();
+        @include transition();
+        margin: 0 24px;
+    }
+
+    &__cart {
+        @include header-icons();
+        @include transition();
+    }
+}
+
+.hover-icon:hover {
+    color: $colorPink;
+    fill: $colorPink;
+}
+
+
+.header {
+    padding: 18px $container;
+    display: flex;
+    justify-content: space-between;
+    background: #222222;
+
+
+    &__left-block {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &__right-block {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+}
+
+.logo {
+    margin-right: 40px;
+
+    &__pic {
+        width: 50px;
+    }
+
+}
+
+.brand {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+    // position: relative;
+
+
+    &__box-l {
+        background-image: url(/img/default/brand.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+
+        @include brandBoxSize();
+    }
+
+
+    &__box-r {
+        align-items: center;
+        background-color: #F1E4E6;
+
+        @include brandBoxSize();
+    }
+
+    &__heading {
+        margin: 357px 0 0 73px;
+        width: 413px;
+        position: relative;
+
+        @include headings();
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 40px;
+    }
+
+    &__heading::before {
+        content: '';
+        padding: 42px 6px;
+        background-color: $colorPink;
+        position: absolute;
+        top: 0;
+        left: -28px;
+    }
+
+    &__heading-small {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 38px;
+    }
+}
+
+.pink-txt {
+    color: $colorPink;
+}
+
+.offer {
+    padding: 63px $container 0;
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__link {
+        margin: 0 30px 30px 0;
+        display: block;
+        width: $boxWidth;
+        height: 260px;
+
+        text-decoration: none;
+        z-index: 0;
+        position: relative;
+    }
+
+    &__link:last-of-type {
+        margin: 0;
+        height: 180px;
+    }
+
+    &__link:nth-of-type(3) {
+        margin: 0 0 30px 0;
+    }
+
+    &_text {
+        //
+        display: none;
+        //
+        margin: 0;
+        padding: 0;
+        margin-top: 105px;
+
+        @include color-offer();
+
+        transition-property: display;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+
+    }
+
+
+
+    &__pink {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+
+        color: $colorPink;
+    }
+
+
+
+    &__women {
+        background: url(/img/offer/offer-woman.jpg);
+
+
+    }
+
+    &__men {
+        background-image: url(/img/offer/offer-man.jpg);
+    }
+
+
+    &__kids {
+        background-image: url(/img/offer/offer-kids.jpg);
+
+    }
+
+    &__accy {
+        flex-basis: 100%;
+        background-image: url(/img/offer/offer-accy.jpg);
+    }
+
+
+}
+
+.offer-cover {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    transition-property: background;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.offer__accy .offer_text {
+    margin-top: 65px;
+}
+
+.offer__link:hover .offer_text {
+    display: block;
+}
+
+.offer__link:hover .offer-cover {
+    background-color: rgba(33, 22, 22, 0.7);
+}
+
+
+.items {
+    padding: 0 $container 0;
+    display: flex;
+    flex-direction: column;
+
+    &__heading {
+        @include zeroMargin();
+        text-align: center;
+
+        font-size: 30px;
+        line-height: 36px;
+        @include headings();
+
+    }
+
+    &__text {
+        margin: 6px 0 48px;
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        line-height: 17px;
+        color: #9F9F9F;
+
+    }
+
+    &__list {
+        @include zeroMargin();
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        &-item {
+            @include zeroMargin();
+            margin-bottom: 30px;
+            width: $boxWidth;
+            background-color: #F8F8F8;
+
+            position: relative;
+        }
+
+        // &-img {}
+
+        &-desc {
+            padding: 25px 28px 20px 16px;
+        }
+
+        &-heading {
+            @include zeroMargin();
+            margin-bottom: 12px;
+            @include headings();
+            font-size: 13px;
+            line-height: 16px;
+        }
+
+        &-text {
+            @include zeroMargin();
+            margin-bottom: 18px;
+            @include TextPar();
+            color: #5D5D5D;
+
+
+        }
+
+        &-price {
+            @include zeroMargin();
+            color: $colorPink;
+        }
+
+    }
+
+    &__browse-btn {
+        @include transition();
+        margin: 18px auto 100px;
+        padding: 15px 40px;
+        border: 1px solid #FF6A6A;
+        background-color: transparent;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $colorPink;
+    }
+
+}
+
+.items__browse-btn:hover {
+    background-color: $colorPink;
+    border-color: $colorPink;
+    color: #FBFBFB;
+}
+
+.feature {
+    padding: 104px $container;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #222224;
+
+
+    &__box {
+        width: $boxWidth;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        &-icon {
+            margin: 0 auto;
+            fill: $colorPink;
+        }
+
+        &-heading {
+            @include zeroMargin();
+            margin-top: 19px;
+            @include headings();
+            font-size: 20px;
+            line-height: 24px;
+            color: #fbfbfb;
+        }
+
+        &-text {
+            @include zeroMargin();
+            margin-top: 16px;
+            @include TextPar();
+            color: #FBFBFB;
+        }
+    }
+}
+
+.sub {
+    background-image: url(/img/default/sub-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    &-bg {
+        padding: 97px $container 0;
+        display: flex;
+        justify-content: center;
+        background: rgba(244, 244, 244, 0.7);
+    }
+
+    &__review-box {
+        margin-right: 223px;
+        padding-bottom: 126px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: $boxWidth;
+    }
+
+    &__review-img {
+        margin: 0 auto;
+    }
+
+    &__review-text {
+        margin: 30px 0;
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #222224;
+    }
+
+    &__sub-box {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+    }
+
+    &__sub-heading {
+        margin-bottom: 32px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 167.2%;
+        text-align: center;
+        color: #222224;
+
+    }
+
+    &__smaller-text {
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__form-email {
+        padding: 17px 22px;
+        border: none;
+        border-top-left-radius: 35px;
+        border-bottom-left-radius: 35px;
+        background: #E1E1E1;
+    }
+
+    &__form-email::placeholder {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #222224;
+
+        opacity: 0.67;
+    }
+
+    &__form-btn {
+        padding: 17px 22px;
+        border: none;
+        border-top-right-radius: 35px;
+        border-bottom-right-radius: 35px;
+        background: $colorPink;
+
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FBFBFB;
+    }
+
+}
+
+.footer {
+    padding: 23px $container;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background: #222224;
+
+    &__copy {
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: #FBFBFB;
+    }
+
+    &__social-link {
+
+        margin-right: 7px;
+        text-decoration: none;
+
+        &-icon {
+            @include transition();
+            padding: 8px 10px;
+            background-color: #FBFBFB;
+            font-size: 16px;
+            color: #222224;
+        }
+    }
+}
+
+.footer__social-link-icon:hover {
+    background-color: $colorPink;
+    color: #FBFBFB;
+}

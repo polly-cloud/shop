@@ -52,12 +52,14 @@ $boxWidth: 360px;
     line-height: 17px;
 }
 
+
 @mixin menuText {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
 }
+
 
 @mixin transition {
     transition-property: fill, color, background;
@@ -143,6 +145,8 @@ body {
     justify-content: center;
 
     position: relative;
+
+
 
 
     &__box-l {
@@ -303,6 +307,7 @@ body {
 .nav-open {
     display: flex;
 }
+
 
 .offer {
     padding: 63px $container 0;

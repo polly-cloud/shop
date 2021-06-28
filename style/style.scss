@@ -52,6 +52,13 @@ $boxWidth: 360px;
     line-height: 17px;
 }
 
+@mixin menuText {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
 @mixin transition {
     transition-property: fill, color, background;
     transition-duration: 0.3s;
@@ -135,7 +142,7 @@ body {
     display: flex;
     justify-content: center;
 
-    // position: relative;
+    position: relative;
 
 
     &__box-l {
@@ -183,6 +190,118 @@ body {
 
 .pink-txt {
     color: $colorPink;
+}
+
+.nav {
+    padding-bottom: 100px;
+    background-color: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+
+    position: absolute;
+    right: 0;
+    top: 78px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+
+    &__btn {
+        border: none;
+        background-color: transparent;
+        margin: 16px 16px 0 203px;
+
+        transition-property: color;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+    }
+
+    &__btn:focus {
+        border: none;
+        outline: none;
+        color: $colorPink;
+    }
+
+    &__btn:hover {
+        color: $colorPink;
+    }
+
+    &__heading {
+        margin: 9px 34px 24px;
+        @include menuText();
+        font-weight: 700;
+        color: #000000;
+    }
+
+    &__menu {
+        list-style-type: none;
+        @include zeroMargin();
+        @include menuText();
+
+
+        &-head {
+            margin: 20px 0 12px 33px;
+        }
+
+        &-item {
+            margin-left: 55px;
+            margin-bottom: 11px;
+        }
+
+        &-link {
+            @include menuText();
+            @include transition();
+            text-decoration: none;
+            color: #6F6E6E;
+
+            &-pink {
+                color: $colorPink;
+            }
+
+
+        }
+    }
+
+    &-head {
+        margin-left: 33px;
+        margin-bottom: 20px;
+
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: $colorPink;
+
+    }
+
+    &__menu-block {
+        padding-left: 20px;
+        list-style-type: none;
+        margin-top: 12px;
+    }
+
+    &__menu-text {
+        margin-bottom: 11px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+    }
+}
+
+.nav__menu-link:hover {
+    font-weight: bold;
+}
+
+.fa-times {
+    font-size: 18px;
+}
+
+.nav-close {
+    display: none;
+}
+
+.nav-open {
+    display: flex;
 }
 
 .offer {

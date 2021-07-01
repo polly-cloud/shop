@@ -9,6 +9,10 @@ body {
   padding: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 .btn__search {
   background-color: transparent;
   border: none;
@@ -180,12 +184,9 @@ body {
 .nav {
   padding-bottom: 100px;
   background-color: #FFFFFF;
-  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   position: absolute;
-  right: 0;
-  top: 78px;
-  z-index: 1;
+  right: 3px;
+  top: 3px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,6 +194,22 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transform: translateX(400px);
+          transform: translateX(400px);
+  -webkit-transition: -webkit-transform .2s ease-in;
+  transition: -webkit-transform .2s ease-in;
+  transition: transform .2s ease-in;
+  transition: transform .2s ease-in, -webkit-transform .2s ease-in;
+}
+
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: background .3s ease-in;
+  transition: background .3s ease-in;
 }
 
 .nav__btn {
@@ -298,14 +315,40 @@ body {
   font-size: 18px;
 }
 
-.nav-close {
-  display: none;
+.nav,
+.nav-overlay {
+  opacity: 0;
+  z-index: -1;
 }
 
-.nav-open {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.menu.nav-open .nav,
+.menu.nav-open .nav-overlay {
+  opacity: 1;
+  z-index: 100;
+}
+
+.menu.nav-close .nav,
+.menu.nav-close .nav-overlay {
+  opacity: 1;
+  z-index: 100;
+}
+
+.menu.nav-open .nav-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.menu.nav-open .nav {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+.menu.nav-close .nav-overlay {
+  background: rgba(0, 0, 0, 0);
+}
+
+.menu.nav-close .nav {
+  -webkit-transform: translateX(400px);
+          transform: translateX(400px);
 }
 
 .offer {

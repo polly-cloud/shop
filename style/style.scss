@@ -78,6 +78,10 @@ body {
     padding: 0;
 }
 
+button {
+    cursor: pointer;
+}
+
 .btn {
     &__search {
         @include header-icons();
@@ -196,17 +200,30 @@ body {
     color: $colorPink;
 }
 
+// Меню
 .nav {
     padding-bottom: 100px;
     background-color: #FFFFFF;
-    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 
     position: absolute;
-    right: 0;
-    top: 78px;
-    z-index: 1;
+    right: 3px;
+    top: 3px;
     display: flex;
     flex-direction: column;
+
+    transform: translateX(400px);
+    transition: transform .2s ease-in;
+
+
+    &-overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transition: background .3s ease-in;
+
+    }
 
     &__btn {
         border: none;
@@ -300,12 +317,38 @@ body {
     font-size: 18px;
 }
 
-.nav-close {
-    display: none;
+.nav,
+.nav-overlay {
+    opacity: 0;
+    z-index: -1;
 }
 
-.nav-open {
-    display: flex;
+.menu.nav-open .nav,
+.menu.nav-open .nav-overlay {
+    opacity: 1;
+    z-index: 100;
+}
+
+.menu.nav-close .nav,
+.menu.nav-close .nav-overlay {
+    opacity: 1;
+    z-index: 100;
+}
+
+.menu.nav-open .nav-overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.menu.nav-open .nav {
+    transform: translateX(0px);
+}
+
+.menu.nav-close .nav-overlay {
+    background: rgba(0, 0, 0, 0);
+}
+
+.menu.nav-close .nav {
+    transform: translateX(400px);
 }
 
 

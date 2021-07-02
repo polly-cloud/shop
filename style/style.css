@@ -1,6 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -22,12 +22,12 @@ button {
   -webkit-transition-property: fill, color, background;
   transition-property: fill, color, background;
   -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
   font-size: 28px;
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
 }
 
 .btn__menu {
@@ -39,9 +39,9 @@ button {
   -webkit-transition-property: fill, color, background;
   transition-property: fill, color, background;
   -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 
 .btn__profile {
@@ -53,9 +53,9 @@ button {
   -webkit-transition-property: fill, color, background;
   transition-property: fill, color, background;
   -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
   margin: 0 24px;
 }
 
@@ -68,9 +68,9 @@ button {
   -webkit-transition-property: fill, color, background;
   transition-property: fill, color, background;
   -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 
 .hover-icon:hover {
@@ -84,8 +84,8 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background: #222222;
 }
 
@@ -94,8 +94,8 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .header__right-block {
@@ -103,11 +103,11 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
 .logo {
@@ -124,30 +124,33 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+
+  -ms-flex-pack: center;
+  justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
 }
 
 .brand__box-l {
-  background-image: url(/img/default/brand.png);
+  background-image: url(img/default/brand.png);
   background-repeat: no-repeat;
   background-position: top right;
   width: 45%;
   min-height: 764px;
   -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  flex-basis: 50%;
 }
 
 .brand__box-r {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #F1E4E6;
   width: 45%;
   min-height: 764px;
   -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  flex-basis: 50%;
 }
 
 .brand__heading {
@@ -187,15 +190,21 @@ button {
   position: absolute;
   right: 3px;
   top: 3px;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  position: absolute;
+  right: 0;
+  top: 78px;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-transform: translateX(400px);
-          transform: translateX(400px);
+  transform: translateX(400px);
   -webkit-transition: -webkit-transform .2s ease-in;
   transition: -webkit-transform .2s ease-in;
   transition: transform .2s ease-in;
@@ -210,6 +219,8 @@ button {
   left: 0;
   -webkit-transition: background .3s ease-in;
   transition: background .3s ease-in;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .nav__btn {
@@ -219,6 +230,9 @@ button {
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
           transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
@@ -271,6 +285,9 @@ button {
   -webkit-transition-property: fill, color, background;
   transition-property: fill, color, background;
   -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
           transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
@@ -339,7 +356,7 @@ button {
 
 .menu.nav-open .nav {
   -webkit-transform: translateX(0px);
-          transform: translateX(0px);
+  transform: translateX(0px);
 }
 
 .menu.nav-close .nav-overlay {
@@ -348,7 +365,15 @@ button {
 
 .menu.nav-close .nav {
   -webkit-transform: translateX(400px);
-          transform: translateX(400px);
+  transform: translateX(400px);
+.nav-close {
+  display: none;
+}
+
+.nav-open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .offer {
@@ -358,10 +383,10 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .offer__link {
@@ -398,9 +423,9 @@ button {
   -webkit-transition-property: display;
   transition-property: display;
   -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 
 .offer__pink {
@@ -411,21 +436,21 @@ button {
 }
 
 .offer__women {
-  background: url(/img/offer/offer-woman.jpg);
+  background: url(img/offer/offer-woman.jpg);
 }
 
 .offer__men {
-  background-image: url(/img/offer/offer-man.jpg);
+  background-image: url(img/offer/offer-man.jpg);
 }
 
 .offer__kids {
-  background-image: url(/img/offer/offer-kids.jpg);
+  background-image: url(img/offer/offer-kids.jpg);
 }
 
 .offer__accy {
   -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  background-image: url(/img/offer/offer-accy.jpg);
+  flex-basis: 100%;
+  background-image: url(img/offer/offer-accy.jpg);
 }
 
 .offer-cover {
@@ -436,9 +461,9 @@ button {
   -webkit-transition-property: background;
   transition-property: background;
   -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 
 .offer__accy .offer_text {
@@ -460,8 +485,8 @@ button {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .items__heading {
@@ -491,13 +516,13 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .items__list-item {
@@ -545,9 +570,9 @@ button {
   -webkit-transition-property: fill, color, background;
   transition-property: fill, color, background;
   -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
   margin: 18px auto 100px;
   padding: 15px 40px;
   border: 1px solid #FF6A6A;
@@ -571,8 +596,8 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background-color: #222224;
 }
 
@@ -583,11 +608,11 @@ button {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -620,7 +645,7 @@ button {
 }
 
 .sub {
-  background-image: url(/img/default/sub-bg.png);
+  background-image: url(img/default/sub-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -632,8 +657,8 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background: rgba(244, 244, 244, 0.7);
 }
 
@@ -645,11 +670,11 @@ button {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 360px;
 }
 
@@ -673,8 +698,8 @@ button {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .sub__sub-heading {
@@ -696,8 +721,8 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .sub__form-email {
@@ -764,11 +789,11 @@ button {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background: #222224;
 }
 
@@ -789,9 +814,9 @@ button {
   -webkit-transition-property: fill, color, background;
   transition-property: fill, color, background;
   -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
   padding: 8px 10px;
   background-color: #FBFBFB;
   font-size: 16px;
@@ -802,4 +827,5 @@ button {
   background-color: #F16D7F;
   color: #FBFBFB;
 }
+
 /*# sourceMappingURL=style.css.map */

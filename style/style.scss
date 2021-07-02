@@ -154,7 +154,7 @@ button {
 
 
     &__box-l {
-        background-image: url(/img/default/brand.png);
+        background-image: url(img/default/brand.png);
         background-repeat: no-repeat;
         background-position: top right;
 
@@ -408,24 +408,24 @@ button {
 
 
     &__women {
-        background: url(/img/offer/offer-woman.jpg);
+        background: url(img/offer/offer-woman.jpg);
 
 
     }
 
     &__men {
-        background-image: url(/img/offer/offer-man.jpg);
+        background-image: url(img/offer/offer-man.jpg);
     }
 
 
     &__kids {
-        background-image: url(/img/offer/offer-kids.jpg);
+        background-image: url(img/offer/offer-kids.jpg);
 
     }
 
     &__accy {
         flex-basis: 100%;
-        background-image: url(/img/offer/offer-accy.jpg);
+        background-image: url(img/offer/offer-accy.jpg);
     }
 
 
@@ -587,7 +587,7 @@ button {
 }
 
 .sub {
-    background-image: url(/img/default/sub-bg.png);
+    background-image: url(img/default/sub-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;

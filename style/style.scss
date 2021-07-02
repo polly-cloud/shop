@@ -225,6 +225,18 @@ button {
 
     }
 
+.nav {
+    padding-bottom: 100px;
+    background-color: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+
+    position: absolute;
+    right: 0;
+    top: 78px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+
     &__btn {
         border: none;
         background-color: transparent;
@@ -349,6 +361,12 @@ button {
 
 .menu.nav-close .nav {
     transform: translateX(400px);
+.nav-close {
+    display: none;
+}
+
+.nav-open {
+    display: flex;
 }
 
 

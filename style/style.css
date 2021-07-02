@@ -1,6 +1,10 @@
 * {
   -webkit-box-sizing: border-box;
+<<<<<<< HEAD
           box-sizing: border-box;
+=======
+  box-sizing: border-box;
+>>>>>>> main
 }
 
 body {
@@ -9,6 +13,13 @@ body {
   padding: 0;
 }
 
+<<<<<<< HEAD
+=======
+button {
+  cursor: pointer;
+}
+
+>>>>>>> main
 .btn__search {
   background-color: transparent;
   border: none;
@@ -18,12 +29,21 @@ body {
   -webkit-transition-property: fill, color, background;
   transition-property: fill, color, background;
   -webkit-transition-duration: 0.3s;
+<<<<<<< HEAD
           transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
   font-size: 28px;
   -ms-flex-item-align: end;
       align-self: flex-end;
+=======
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  font-size: 28px;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+>>>>>>> main
 }
 
 .btn__menu {
@@ -35,9 +55,15 @@ body {
   -webkit-transition-property: fill, color, background;
   transition-property: fill, color, background;
   -webkit-transition-duration: 0.3s;
+<<<<<<< HEAD
           transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
+=======
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+>>>>>>> main
 }
 
 .btn__profile {
@@ -49,9 +75,15 @@ body {
   -webkit-transition-property: fill, color, background;
   transition-property: fill, color, background;
   -webkit-transition-duration: 0.3s;
+<<<<<<< HEAD
           transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
+=======
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+>>>>>>> main
   margin: 0 24px;
 }
 
@@ -64,9 +96,15 @@ body {
   -webkit-transition-property: fill, color, background;
   transition-property: fill, color, background;
   -webkit-transition-duration: 0.3s;
+<<<<<<< HEAD
           transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
+=======
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+>>>>>>> main
 }
 
 .hover-icon:hover {
@@ -80,8 +118,13 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+<<<<<<< HEAD
       -ms-flex-pack: justify;
           justify-content: space-between;
+=======
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+>>>>>>> main
   background: #222222;
 }
 
@@ -90,8 +133,13 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
+<<<<<<< HEAD
       -ms-flex-pack: start;
           justify-content: flex-start;
+=======
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+>>>>>>> main
 }
 
 .header__right-block {
@@ -99,11 +147,19 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
+<<<<<<< HEAD
       -ms-flex-pack: end;
           justify-content: flex-end;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+=======
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+>>>>>>> main
 }
 
 .logo {
@@ -120,30 +176,53 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+<<<<<<< HEAD
+=======
+
+  -ms-flex-pack: center;
+  justify-content: center;
+>>>>>>> main
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
 }
 
 .brand__box-l {
+<<<<<<< HEAD
   background-image: url(/img/default/brand.png);
+=======
+  background-image: url(../img/default/brand.png);
+>>>>>>> main
   background-repeat: no-repeat;
   background-position: top right;
   width: 45%;
   min-height: 764px;
   -ms-flex-preferred-size: 50%;
+<<<<<<< HEAD
       flex-basis: 50%;
+=======
+  flex-basis: 50%;
+>>>>>>> main
 }
 
 .brand__box-r {
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
+=======
+  -ms-flex-align: center;
+  align-items: center;
+>>>>>>> main
   background-color: #F1E4E6;
   width: 45%;
   min-height: 764px;
   -ms-flex-preferred-size: 50%;
+<<<<<<< HEAD
       flex-basis: 50%;
+=======
+  flex-basis: 50%;
+>>>>>>> main
 }
 
 .brand__heading {
@@ -180,6 +259,12 @@ body {
 .nav {
   padding-bottom: 100px;
   background-color: #FFFFFF;
+<<<<<<< HEAD
+=======
+  position: absolute;
+  right: 3px;
+  top: 3px;
+>>>>>>> main
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   position: absolute;
@@ -191,6 +276,27 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+<<<<<<< HEAD
+=======
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transform: translateX(400px);
+  transform: translateX(400px);
+  -webkit-transition: -webkit-transform .2s ease-in;
+  transition: -webkit-transform .2s ease-in;
+  transition: transform .2s ease-in;
+  transition: transform .2s ease-in, -webkit-transform .2s ease-in;
+}
+
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: background .3s ease-in;
+  transition: background .3s ease-in;
+>>>>>>> main
       -ms-flex-direction: column;
           flex-direction: column;
 }
@@ -202,6 +308,12 @@ body {
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
+<<<<<<< HEAD
+=======
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+>>>>>>> main
           transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
@@ -254,6 +366,12 @@ body {
   -webkit-transition-property: fill, color, background;
   transition-property: fill, color, background;
   -webkit-transition-duration: 0.3s;
+<<<<<<< HEAD
+=======
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+>>>>>>> main
           transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
@@ -265,7 +383,11 @@ body {
   color: #F16D7F;
 }
 
+<<<<<<< HEAD
 .nav-head {
+=======
+.nav__menu-head {
+>>>>>>> main
   margin-left: 33px;
   margin-bottom: 20px;
   font-family: 'Lato', sans-serif;
@@ -275,6 +397,7 @@ body {
   color: #F16D7F;
 }
 
+<<<<<<< HEAD
 .nav__menu-block {
   padding-left: 20px;
   list-style-type: none;
@@ -290,6 +413,8 @@ body {
   color: #6F6E6E;
 }
 
+=======
+>>>>>>> main
 .nav__menu-link:hover {
   font-weight: bold;
 }
@@ -298,6 +423,43 @@ body {
   font-size: 18px;
 }
 
+<<<<<<< HEAD
+=======
+.nav,
+.nav-overlay {
+  opacity: 0;
+  z-index: -1;
+}
+
+.menu.nav-open .nav,
+.menu.nav-open .nav-overlay {
+  opacity: 1;
+  z-index: 100;
+}
+
+.menu.nav-close .nav,
+.menu.nav-close .nav-overlay {
+  opacity: 1;
+  z-index: 100;
+}
+
+.menu.nav-open .nav-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.menu.nav-open .nav {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
+.menu.nav-close .nav-overlay {
+  background: rgba(0, 0, 0, 0);
+}
+
+.menu.nav-close .nav {
+  -webkit-transform: translateX(400px);
+  transform: translateX(400px);
+>>>>>>> main
 .nav-close {
   display: none;
 }
@@ -315,10 +477,17 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+<<<<<<< HEAD
       -ms-flex-pack: justify;
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+=======
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+>>>>>>> main
 }
 
 .offer__link {
@@ -355,9 +524,15 @@ body {
   -webkit-transition-property: display;
   transition-property: display;
   -webkit-transition-duration: 0.3s;
+<<<<<<< HEAD
           transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
+=======
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+>>>>>>> main
 }
 
 .offer__pink {
@@ -368,6 +543,7 @@ body {
 }
 
 .offer__women {
+<<<<<<< HEAD
   background: url(/img/offer/offer-woman.jpg);
 }
 
@@ -377,12 +553,28 @@ body {
 
 .offer__kids {
   background-image: url(/img/offer/offer-kids.jpg);
+=======
+  background: url(../img/offer/offer-woman.jpg);
+}
+
+.offer__men {
+  background-image: url(../img/offer/offer-man.jpg);
+}
+
+.offer__kids {
+  background-image: url(../img/offer/offer-kids.jpg);
+
+>>>>>>> main
 }
 
 .offer__accy {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+<<<<<<< HEAD
   background-image: url(/img/offer/offer-accy.jpg);
+=======
+  background-image: url(../img/offer/offer-accy.jpg);
+>>>>>>> main
 }
 
 .offer-cover {
@@ -393,9 +585,15 @@ body {
   -webkit-transition-property: background;
   transition-property: background;
   -webkit-transition-duration: 0.3s;
+<<<<<<< HEAD
           transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
+=======
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+>>>>>>> main
 }
 
 .offer__accy .offer_text {
@@ -417,8 +615,13 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+<<<<<<< HEAD
       -ms-flex-direction: column;
           flex-direction: column;
+=======
+  -ms-flex-direction: column;
+  flex-direction: column;
+>>>>>>> main
 }
 
 .items__heading {
@@ -448,6 +651,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+<<<<<<< HEAD
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: start;
@@ -455,6 +659,15 @@ body {
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+=======
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+>>>>>>> main
 }
 
 .items__list-item {
@@ -502,9 +715,15 @@ body {
   -webkit-transition-property: fill, color, background;
   transition-property: fill, color, background;
   -webkit-transition-duration: 0.3s;
+<<<<<<< HEAD
           transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
+=======
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+>>>>>>> main
   margin: 18px auto 100px;
   padding: 15px 40px;
   border: 1px solid #FF6A6A;
@@ -528,8 +747,13 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+<<<<<<< HEAD
       -ms-flex-pack: justify;
           justify-content: space-between;
+=======
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+>>>>>>> main
   background-color: #222224;
 }
 
@@ -540,11 +764,19 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+<<<<<<< HEAD
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+=======
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+>>>>>>> main
   text-align: center;
 }
 
@@ -577,7 +809,11 @@ body {
 }
 
 .sub {
+<<<<<<< HEAD
   background-image: url(/img/default/sub-bg.png);
+=======
+  background-image: url(img/default/sub-bg.png);
+>>>>>>> main
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -589,8 +825,13 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+<<<<<<< HEAD
       -ms-flex-pack: center;
           justify-content: center;
+=======
+  -ms-flex-pack: center;
+  justify-content: center;
+>>>>>>> main
   background: rgba(244, 244, 244, 0.7);
 }
 
@@ -602,11 +843,19 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+<<<<<<< HEAD
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+=======
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+>>>>>>> main
   width: 360px;
 }
 
@@ -630,8 +879,13 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+<<<<<<< HEAD
       -ms-flex-direction: column;
           flex-direction: column;
+=======
+  -ms-flex-direction: column;
+  flex-direction: column;
+>>>>>>> main
 }
 
 .sub__sub-heading {
@@ -653,8 +907,13 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+<<<<<<< HEAD
       -ms-flex-pack: center;
           justify-content: center;
+=======
+  -ms-flex-pack: center;
+  justify-content: center;
+>>>>>>> main
 }
 
 .sub__form-email {
@@ -721,11 +980,19 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+<<<<<<< HEAD
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+=======
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+>>>>>>> main
   background: #222224;
 }
 
@@ -746,9 +1013,15 @@ body {
   -webkit-transition-property: fill, color, background;
   transition-property: fill, color, background;
   -webkit-transition-duration: 0.3s;
+<<<<<<< HEAD
           transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
+=======
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+>>>>>>> main
   padding: 8px 10px;
   background-color: #FBFBFB;
   font-size: 16px;
@@ -759,4 +1032,8 @@ body {
   background-color: #F16D7F;
   color: #FBFBFB;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 /*# sourceMappingURL=style.css.map */

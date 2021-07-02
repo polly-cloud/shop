@@ -223,6 +223,17 @@ button {
 
     }
 
+.nav {
+    padding-bottom: 100px;
+    background-color: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+
+    position: absolute;
+    right: 0;
+    top: 78px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
 
     &__btn {
         border: none;
@@ -332,6 +343,12 @@ button {
 
 .menu.nav-close .nav {
     transform: translateX(400px);
+.nav-close {
+    display: none;
+}
+
+.nav-open {
+    display: flex;
 }
 
 
@@ -392,8 +409,6 @@ button {
 
     &__women {
         background: url(../img/offer/offer-woman.jpg);
-
-
     }
 
     &__men {
@@ -403,7 +418,6 @@ button {
 
     &__kids {
         background-image: url(../img/offer/offer-kids.jpg);
-
     }
 
     &__accy {

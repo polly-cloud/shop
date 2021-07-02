@@ -133,7 +133,7 @@ button {
 }
 
 .brand__box-l {
-  background-image: url(img/default/brand.png);
+  background-image: url(../img/default/brand.png);
   background-repeat: no-repeat;
   background-position: top right;
   width: 45%;
@@ -299,7 +299,7 @@ button {
   color: #F16D7F;
 }
 
-.nav-head {
+.nav__menu-head {
   margin-left: 33px;
   margin-bottom: 20px;
   font-family: 'Lato', sans-serif;
@@ -307,21 +307,6 @@ button {
   font-size: 14px;
   line-height: 17px;
   color: #F16D7F;
-}
-
-.nav__menu-block {
-  padding-left: 20px;
-  list-style-type: none;
-  margin-top: 12px;
-}
-
-.nav__menu-text {
-  margin-bottom: 11px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #6F6E6E;
 }
 
 .nav__menu-link:hover {
@@ -436,21 +421,22 @@ button {
 }
 
 .offer__women {
-  background: url(img/offer/offer-woman.jpg);
+  background: url(../img/offer/offer-woman.jpg);
 }
 
 .offer__men {
-  background-image: url(img/offer/offer-man.jpg);
+  background-image: url(../img/offer/offer-man.jpg);
 }
 
 .offer__kids {
-  background-image: url(img/offer/offer-kids.jpg);
+  background-image: url(../img/offer/offer-kids.jpg);
+
 }
 
 .offer__accy {
   -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
-  background-image: url(img/offer/offer-accy.jpg);
+      flex-basis: 100%;
+  background-image: url(../img/offer/offer-accy.jpg);
 }
 
 .offer-cover {

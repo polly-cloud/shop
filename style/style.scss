@@ -78,6 +78,10 @@ body {
     padding: 0;
 }
 
+button {
+    cursor: pointer;
+}
+
 .btn {
     &__search {
         @include header-icons();
@@ -150,7 +154,7 @@ body {
 
 
     &__box-l {
-        background-image: url(/img/default/brand.png);
+        background-image: url(img/default/brand.png);
         background-repeat: no-repeat;
         background-position: top right;
 
@@ -195,6 +199,31 @@ body {
 .pink-txt {
     color: $colorPink;
 }
+
+// Меню
+.nav {
+    padding-bottom: 100px;
+    background-color: #FFFFFF;
+
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    display: flex;
+    flex-direction: column;
+
+    transform: translateX(400px);
+    transition: transform .2s ease-in;
+
+
+    &-overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transition: background .3s ease-in;
+
+    }
 
 .nav {
     padding-bottom: 100px;
@@ -300,6 +329,38 @@ body {
     font-size: 18px;
 }
 
+.nav,
+.nav-overlay {
+    opacity: 0;
+    z-index: -1;
+}
+
+.menu.nav-open .nav,
+.menu.nav-open .nav-overlay {
+    opacity: 1;
+    z-index: 100;
+}
+
+.menu.nav-close .nav,
+.menu.nav-close .nav-overlay {
+    opacity: 1;
+    z-index: 100;
+}
+
+.menu.nav-open .nav-overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.menu.nav-open .nav {
+    transform: translateX(0px);
+}
+
+.menu.nav-close .nav-overlay {
+    background: rgba(0, 0, 0, 0);
+}
+
+.menu.nav-close .nav {
+    transform: translateX(400px);
 .nav-close {
     display: none;
 }
@@ -365,24 +426,24 @@ body {
 
 
     &__women {
-        background: url(/img/offer/offer-woman.jpg);
+        background: url(img/offer/offer-woman.jpg);
 
 
     }
 
     &__men {
-        background-image: url(/img/offer/offer-man.jpg);
+        background-image: url(img/offer/offer-man.jpg);
     }
 
 
     &__kids {
-        background-image: url(/img/offer/offer-kids.jpg);
+        background-image: url(img/offer/offer-kids.jpg);
 
     }
 
     &__accy {
         flex-basis: 100%;
-        background-image: url(/img/offer/offer-accy.jpg);
+        background-image: url(img/offer/offer-accy.jpg);
     }
 
 
@@ -544,7 +605,7 @@ body {
 }
 
 .sub {
-    background-image: url(/img/default/sub-bg.png);
+    background-image: url(img/default/sub-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;

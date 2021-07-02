@@ -52,10 +52,6 @@ $boxWidth: 360px;
     line-height: 17px;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> main
 @mixin menuText {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -63,10 +59,6 @@ $boxWidth: 360px;
     line-height: 17px;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> main
 @mixin transition {
     transition-property: fill, color, background;
     transition-duration: 0.3s;
@@ -84,13 +76,10 @@ body {
     padding: 0;
 }
 
-<<<<<<< HEAD
-=======
 button {
     cursor: pointer;
 }
 
->>>>>>> main
 .btn {
     &__search {
         @include header-icons();
@@ -161,11 +150,7 @@ button {
 
 
     &__box-l {
-<<<<<<< HEAD
-        background-image: url(/img/default/brand.png);
-=======
         background-image: url(../img/default/brand.png);
->>>>>>> main
         background-repeat: no-repeat;
         background-position: top right;
 
@@ -211,8 +196,6 @@ button {
     color: $colorPink;
 }
 
-<<<<<<< HEAD
-=======
 // Меню
 .nav {
     padding-bottom: 100px;
@@ -237,19 +220,6 @@ button {
         transition: background .3s ease-in;
 
     }
-
->>>>>>> main
-.nav {
-    padding-bottom: 100px;
-    background-color: #FFFFFF;
-    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-
-    position: absolute;
-    right: 0;
-    top: 78px;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
 
     &__btn {
         border: none;
@@ -295,46 +265,13 @@ button {
 
         &-link {
             @include menuText();
-            @include transition();
             text-decoration: none;
             color: #6F6E6E;
+            transition: font-weight, 0.3s, ease-in-out;
 
             &-pink {
                 color: $colorPink;
             }
-<<<<<<< HEAD
-
-
-        }
-    }
-
-    &-head {
-        margin-left: 33px;
-        margin-bottom: 20px;
-
-        font-family: 'Lato', sans-serif;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        color: $colorPink;
-
-    }
-
-    &__menu-block {
-        padding-left: 20px;
-        list-style-type: none;
-        margin-top: 12px;
-    }
-
-    &__menu-text {
-        margin-bottom: 11px;
-        font-family: 'Lato', sans-serif;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        color: #6F6E6E;
-    }
-=======
         }
 
         &-head {
@@ -350,7 +287,6 @@ button {
         }
     }
 
->>>>>>> main
 }
 
 .nav__menu-link:hover {
@@ -361,8 +297,6 @@ button {
     font-size: 18px;
 }
 
-<<<<<<< HEAD
-=======
 .nav,
 .nav-overlay {
     opacity: 0;
@@ -395,19 +329,9 @@ button {
 
 .menu.nav-close .nav {
     transform: translateX(400px);
->>>>>>> main
-.nav-close {
-    display: none;
 }
 
-.nav-open {
-    display: flex;
-}
 
-<<<<<<< HEAD
-=======
-
->>>>>>> main
 .offer {
     padding: 63px $container 0;
     margin-bottom: 90px;
@@ -464,40 +388,21 @@ button {
 
 
     &__women {
-<<<<<<< HEAD
-        background: url(/img/offer/offer-woman.jpg);
-
-
-    }
-
-    &__men {
-        background-image: url(/img/offer/offer-man.jpg);
-=======
         background: url(../img/offer/offer-woman.jpg);
     }
 
     &__men {
         background-image: url(../img/offer/offer-man.jpg);
->>>>>>> main
     }
 
 
     &__kids {
-<<<<<<< HEAD
-        background-image: url(/img/offer/offer-kids.jpg);
-
-=======
         background-image: url(../img/offer/offer-kids.jpg);
->>>>>>> main
     }
 
     &__accy {
         flex-basis: 100%;
-<<<<<<< HEAD
-        background-image: url(/img/offer/offer-accy.jpg);
-=======
         background-image: url(../img/offer/offer-accy.jpg);
->>>>>>> main
     }
 
 
@@ -659,11 +564,7 @@ button {
 }
 
 .sub {
-<<<<<<< HEAD
-    background-image: url(/img/default/sub-bg.png);
-=======
-    background-image: url(img/default/sub-bg.png);
->>>>>>> main
+    background-image: url(../img/default/sub-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;

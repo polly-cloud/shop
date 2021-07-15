@@ -1,0 +1,44 @@
+[
+    {
+        "id_product": 1,
+        "product_name": "Jacket",
+        "price": 4000,
+        "img": "items/item1.jpg"
+    },
+
+    {
+        "id_product": 2,
+        "product_name": "Suit",
+        "price": 7000,
+        "img": "items/item2.jpg"
+    },
+
+    {
+        "id_product": 3,
+        "product_name": "Hoodie",
+        "price": 2000,
+        "img": "items/item3.jpg"
+    },
+
+    {
+        "id_product": 4,
+        "product_name": "Shirt",
+        "price": 1500,
+        "img": "items/item4.jpg"
+    },
+
+    {
+        "id_product": 5,
+        "product_name": "Jacket",
+        "price": 3000,
+        "img": "items/item5.jpg"
+    },
+
+    {
+        "id_product": 6,
+        "product_name": "Blouse",
+        "price": 2500,
+        "img": "items/item6.jpg"
+    }
+    
+]

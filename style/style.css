@@ -501,7 +501,7 @@ button {
   font-family: 'Lato', sans-serif;
   color: #222222;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 20px;
   line-height: 16px;
 }
 
@@ -538,6 +538,28 @@ button {
   font-size: 16px;
   line-height: 19px;
   color: #F16D7F;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.buy-btn {
+  margin: 15px 0;
+  padding: 5px 10px;
+  border: 1px solid #FF6A6A;
+  border-radius: 25px;
+  background-color: transparent;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F16D7F;
+}
+
+.items__list-item:hover .buy-btn {
+  background-color: #F16D7F;
+  color: #E8E8E8;
 }
 
 .items__browse-btn:hover {

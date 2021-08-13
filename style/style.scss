@@ -80,6 +80,10 @@ button {
     cursor: pointer;
 }
 
+.invisible {
+    display: none;
+}
+
 .btn {
     &__search {
         @include header-icons();
@@ -117,6 +121,7 @@ button {
     display: flex;
     justify-content: space-between;
     background: #222222;
+    position: relative;
 
 
     &__left-block {
@@ -131,6 +136,114 @@ button {
     }
 
 }
+
+.cart-block {
+    width: 30%;
+    // height: 300px;
+    padding: 5px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    background-color: #F8F8F8;
+    z-index: 3;
+    position: absolute;
+    top: 110%;
+}
+
+.cart-block::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+
+    border-bottom: 18px solid #F8F8F8;
+    border-right: 18px solid transparent;
+    border-left: 18px solid transparent;
+    position: absolute;
+    top: -15px;
+    right: 0px;
+}
+
+
+.cart-block-heading {
+    @include headings();
+    font-size: 18px;
+    padding: 1%;
+    margin: 3px auto 15px;
+    width: 100%;
+    // outline: $outline;
+
+}
+
+.cart-item {
+    padding: 2%;
+    margin-bottom: 7px;
+    display: flex;
+    outline: 2px solid $menu-color;
+    background-color: white;
+}
+
+.cart-item-img {
+    width: 110px;
+    height: 125px;
+}
+
+.product {
+    &__bio {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // outline: $outline;
+
+    }
+
+    &__desc {
+        width: 60%;
+        margin: 0 auto;
+        padding: 1%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        // outline: $outline;
+    }
+
+    &__heading {
+        @include headings();
+        margin: 5px 5px 15px;
+    }
+
+    &__quantity {
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    &__price {
+        margin: 5px;
+        font-size: 13px;
+
+    }
+
+    &__totalprice {
+        margin: 10px 5px 0;
+        align-self: flex-end;
+    }
+
+    &__del-btn {
+        padding: 10px;
+        // margin: 3px 3px 50%;
+        background-color: $colorPink;
+        color: $menu-color;
+        border: none;
+        border-radius: 50px;
+        font-size: 30px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 0.04em;
+    }
+}
+
+
 
 .logo {
     margin-right: 40px;
@@ -200,10 +313,11 @@ button {
 .nav {
     padding-bottom: 100px;
     background-color: #FFFFFF;
+    border-radius: 5px;
 
     position: absolute;
-    right: 3px;
-    top: 3px;
+    right: 1%;
+    top: 1%;
     display: flex;
     flex-direction: column;
 

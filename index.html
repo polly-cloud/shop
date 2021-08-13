@@ -33,8 +33,31 @@
 
             <button type="button" class="btn__profile hover-icon"><i class="far fa-user btn__profile-icon"></i></button>
 
-            <button type="button" class="btn__cart hover-icon"><i
+            <button type="button" id="toggle-cart" class="btn__cart hover-icon"><i
                     class="fas fa-shopping-cart btn__cart-icon"></i></button>
+
+            <!-- Корзина -->
+            <div class="cart-block invisible">
+                <h5 class="cart-block-heading">Your Shopping Cart</h5>
+                <div class="cart-items"></div>
+                <p class="tot-sum"> Total sum: <span id="tot-sum"></span></p>
+                <p class="tot-qua"> Total quantity: <span id="tot-qua"></span></p>
+                <!-- карточка товара в корзине -->
+                <!-- <div class="cart-item" data-id="${this.id_product}">
+                    <div class="product__bio">
+                        <img src="https://via.placeholder.com/100" width="110" height="125" alt="image"
+                            class="cart-item-img">
+                        <div class="product__desc">
+                            <h4 class="product__heading">Itemname</h4>
+                            <p class="product__quantity">Quantity: 0</p>
+                            <p class="product__price">Price: 0 RUB</p>
+                            <p class="product__totalprice">Total: 0 RUB</p>
+                        </div>
+                        <button name="del-btn" class="product__del-btn" data-id="${this.id_product}">&times;</button>
+                    </div>
+                </div> -->
+            </div>
+
         </div>
     </header>
 
@@ -92,8 +115,6 @@
             </a>
 
         </section>
-
-        <!-- тут нужен js -->
 
         <section class="items">
             <h2 class="items__heading">Fetured Items</h2>

@@ -8,16 +8,20 @@ function createProduct(product) {
         createTemplate() {
             return `<figure class="items__list-item" data-id="${this.id_product}">
             <img src=${this.img} alt="Item" width="360" height="420" class="items__list-img">
-            <figcaption class="items__list-desc">
-            <h4 class="items__list-heading">${this.product_name}</h4>
-            <p class="items__list-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-            <p class="items__list-price">${this.price} RUB</p>
+
+            <div class="items__list-cover">
             <button class="buy-btn" 
             name="buy-btn" 
             data-id="${this.id_product}" 
             data-name="${this.product_name}" 
             data-price="${this.price}"
-            data-img="${this.img}">Buy</button>
+            data-img="${this.img}">Add to Cart</button>
+            </div>
+            
+            <figcaption class="items__list-desc">
+            <h4 class="items__list-heading">${this.product_name}</h4>
+            <p class="items__list-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+            <p class="items__list-price">${this.price} RUB</p>
             </figcaption>
             </figure>`
         }
@@ -41,7 +45,7 @@ let catalog = {
         
         document.querySelector(this.container).addEventListener('click', evt => {
             if (evt.target.name == 'buy-btn') {
-                this.cart.addProduct(evt.target.dataset)
+                this.cart.addProduct(evt.target.dataset);
             }
         })   
     },
@@ -105,18 +109,24 @@ let cart = {
 
         container.innerHTML = domString;
 
-        document.querySelector ('#tot-sum').innerHTML = this.sum
+        document.querySelector ('#tot-sum').innerHTML = `${this.sum} RUB`
         document.querySelector ('#tot-qua').innerHTML = this.qua
 
     },
 
     addProduct(product) {
-        let find = this.items.find(item => item.id_product === product.id)
+        let find = this.items.find(item => item.id_product === product.id);
+        let empty = document.querySelector('.cart-block-empty');
+
         if (!find) {
             this.items.push(createCartItem (product.id, product.name, product.price, product.img));
         } else {
             find.quantity++;
         }
+
+        if (cart.items.length > 0) {
+            empty.classList.add('invisible')
+        } 
 
         this.checkTotal();
         this.render();
@@ -124,10 +134,16 @@ let cart = {
 
     removeProduct(id) {
         let find = this.items.find (item => item.id_product === id);
+        let empty = document.querySelector('.cart-block-empty');
+
         if (find.quantity === 1) {
             this.items.splice(this.items.indexOf(find), 1);
         } else {
             find.quantity--;
+        }
+
+        if (cart.items.length == 0) {
+            empty.classList.remove('invisible')
         }
         this.checkTotal();
         this.render();

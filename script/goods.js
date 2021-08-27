@@ -114,7 +114,7 @@ let cart = {
 
     },
 
-    addProduct(product) {
+addProduct(product) {
         let find = this.items.find(item => item.id_product === product.id);
         let empty = document.querySelector('.cart-block-empty');
 

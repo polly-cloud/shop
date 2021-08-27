@@ -735,6 +735,22 @@ button {
 
 .items__list-item:hover .items__list-cover {
   opacity: 1;
+=======
+  margin: 15px 0;
+  padding: 5px 10px;
+  border: 1px solid #FF6A6A;
+  border-radius: 25px;
+  background-color: transparent;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F16D7F;
+}
+
+.items__list-item:hover .buy-btn {
+  background-color: #F16D7F;
+  color: #E8E8E8;
 }
 
 .items__browse-btn:hover {

@@ -33,8 +33,31 @@
 
             <button type="button" class="btn__profile hover-icon"><i class="far fa-user btn__profile-icon"></i></button>
 
-            <button type="button" class="btn__cart hover-icon"><i
+            <button type="button" id="toggle-cart" class="btn__cart hover-icon"><i
                     class="fas fa-shopping-cart btn__cart-icon"></i></button>
+
+            <!-- Корзина -->
+            <div class="cart-block invisible">
+                <h5 class="cart-block-heading">Your Shopping Cart</h5>
+                <div class="cart-items"></div>
+                <p class="tot-sum"> Total sum: <span id="tot-sum"></span></p>
+                <p class="tot-qua"> Total quantity: <span id="tot-qua"></span></p>
+                <!-- карточка товара в корзине -->
+                <!-- <div class="cart-item" data-id="${this.id_product}">
+                    <div class="product__bio">
+                        <img src="https://via.placeholder.com/100" width="110" height="125" alt="image"
+                            class="cart-item-img">
+                        <div class="product__desc">
+                            <h4 class="product__heading">Itemname</h4>
+                            <p class="product__quantity">Quantity: 0</p>
+                            <p class="product__price">Price: 0 RUB</p>
+                            <p class="product__totalprice">Total: 0 RUB</p>
+                        </div>
+                        <button name="del-btn" class="product__del-btn" data-id="${this.id_product}">&times;</button>
+                    </div>
+                </div> -->
+            </div>
+
         </div>
     </header>
 
@@ -93,119 +116,12 @@
 
         </section>
 
-        <!-- тут нужен js -->
-
         <section class="items">
             <h2 class="items__heading">Fetured Items</h2>
             <p class="items__text">Shop for items based on what we featured in this week</p>
 
-
-            <div class="items__list">
-
-                <figure class="items__list-item">
-                    <img src="img/items/item1.jpg" alt="Item" width="360" height="420" class="items__list-img">
-
-                    <figcaption class="items__list-desc">
-                        <h4 class="items__list-heading">ELLERY X M'O CAPSULE</h4>
-                        <p class="items__list-text">
-                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
-                            Ellery
-                            teams up with Moda Operandi.
-                        </p>
-                        <p class="items__list-price">$52.00</p>
-
-                    </figcaption>
-                </figure>
-
-                <!-- <div class="cart-cover">
-                    <button class="add-cart">Add to Cart</button>
-                </div> -->
-
-
-                <figure class="items__list-item">
-                    <img src="img/items/item2.jpg" alt="Item" width="360" height="420" class="items__list-img">
-
-                    <figcaption class="items__list-desc">
-                        <h4 class="items__list-heading">ELLERY X M'O CAPSULE</h4>
-                        <p class="items__list-text">
-                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
-                            Ellery
-                            teams up with Moda Operandi.
-                        </p>
-                        <p class="items__list-price">$52.00</p>
-
-                    </figcaption>
-                </figure>
-
-                <!-- <div class="cart-cover">
-                    <button class="add-cart">Add to Cart</button>
-                </div> -->
-
-
-                <figure class="items__list-item">
-                    <img src="img/items/item3.jpg" alt="Item" width="360" height="420" class="items__list-img">
-
-                    <figcaption class="items__list-desc">
-                        <h4 class="items__list-heading">ELLERY X M'O CAPSULE</h4>
-                        <p class="items__list-text">
-                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
-                            Ellery
-                            teams up with Moda Operandi.
-                        </p>
-                        <p class="items__list-price">$52.00</p>
-
-                    </figcaption>
-                </figure>
-
-
-                <figure class="items__list-item">
-                    <img src="img/items/item4.jpg" alt="Item" width="360" height="420" class="items__list-img">
-
-                    <figcaption class="items__list-desc">
-                        <h4 class="items__list-heading">ELLERY X M'O CAPSULE</h4>
-                        <p class="items__list-text">
-                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
-                            Ellery
-                            teams up with Moda Operandi.
-                        </p>
-                        <p class="items__list-price">$52.00</p>
-
-                    </figcaption>
-                </figure>
-
-
-                <figure class="items__list-item">
-                    <img src="img/items/item5.jpg" alt="Item" width="360" height="420" class="items__list-img">
-
-                    <figcaption class="items__list-desc">
-                        <h4 class="items__list-heading">ELLERY X M'O CAPSULE</h4>
-                        <p class="items__list-text">
-                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
-                            Ellery
-                            teams up with Moda Operandi.
-                        </p>
-                        <p class="items__list-price">$52.00</p>
-
-                    </figcaption>
-                </figure>
-
-
-                <figure class="items__list-item">
-                    <img src="img/items/item6.jpg" alt="Item" width="360" height="420" class="items__list-img">
-
-                    <figcaption class="items__list-desc">
-                        <h4 class="items__list-heading">ELLERY X M'O CAPSULE</h4>
-                        <p class="items__list-text">
-                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
-                            Ellery
-                            teams up with Moda Operandi.
-                        </p>
-                        <p class="items__list-price">$52.00</p>
-
-                    </figcaption>
-                </figure>
-
-            </div>
+            <!-- Список товаров -->
+            <div class="items__list"></div>
 
             <button class="items__browse-btn">Browse All Product</button>
         </section>
@@ -294,6 +210,7 @@
     <script src="script/base.js"></script>
     <script src="script/menu.js"></script>
     <script src="script/index.js"></script>
+    <script src="script/goods.js"></script>
 
 </body>
 

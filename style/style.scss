@@ -52,14 +52,12 @@ $boxWidth: 360px;
     line-height: 17px;
 }
 
-
 @mixin menuText {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
 }
-
 
 @mixin transition {
     transition-property: fill, color, background;
@@ -80,6 +78,10 @@ body {
 
 button {
     cursor: pointer;
+}
+
+.invisible {
+    display: none;
 }
 
 .btn {
@@ -119,6 +121,7 @@ button {
     display: flex;
     justify-content: space-between;
     background: #222222;
+    position: relative;
 
 
     &__left-block {
@@ -133,6 +136,114 @@ button {
     }
 
 }
+
+.cart-block {
+    width: 30%;
+    // height: 300px;
+    padding: 5px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    background-color: #F8F8F8;
+    z-index: 3;
+    position: absolute;
+    top: 110%;
+}
+
+.cart-block::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+
+    border-bottom: 18px solid #F8F8F8;
+    border-right: 18px solid transparent;
+    border-left: 18px solid transparent;
+    position: absolute;
+    top: -15px;
+    right: 0px;
+}
+
+
+.cart-block-heading {
+    @include headings();
+    font-size: 18px;
+    padding: 1%;
+    margin: 3px auto 15px;
+    width: 100%;
+    // outline: $outline;
+
+}
+
+.cart-item {
+    padding: 2%;
+    margin-bottom: 7px;
+    display: flex;
+    outline: 2px solid $menu-color;
+    background-color: white;
+}
+
+.cart-item-img {
+    width: 110px;
+    height: 125px;
+}
+
+.product {
+    &__bio {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // outline: $outline;
+
+    }
+
+    &__desc {
+        width: 60%;
+        margin: 0 auto;
+        padding: 1%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        // outline: $outline;
+    }
+
+    &__heading {
+        @include headings();
+        margin: 5px 5px 15px;
+    }
+
+    &__quantity {
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    &__price {
+        margin: 5px;
+        font-size: 13px;
+
+    }
+
+    &__totalprice {
+        margin: 10px 5px 0;
+        align-self: flex-end;
+    }
+
+    &__del-btn {
+        padding: 10px;
+        // margin: 3px 3px 50%;
+        background-color: $colorPink;
+        color: $menu-color;
+        border: none;
+        border-radius: 50px;
+        font-size: 30px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 0.04em;
+    }
+}
+
+
 
 .logo {
     margin-right: 40px;
@@ -202,10 +313,11 @@ button {
 .nav {
     padding-bottom: 100px;
     background-color: #FFFFFF;
+    border-radius: 5px;
 
     position: absolute;
-    right: 3px;
-    top: 3px;
+    right: 1%;
+    top: 1%;
     display: flex;
     flex-direction: column;
 
@@ -222,18 +334,6 @@ button {
         transition: background .3s ease-in;
 
     }
-
-.nav {
-    padding-bottom: 100px;
-    background-color: #FFFFFF;
-    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-
-    position: absolute;
-    right: 0;
-    top: 78px;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
 
     &__btn {
         border: none;
@@ -279,9 +379,9 @@ button {
 
         &-link {
             @include menuText();
-            @include transition();
             text-decoration: none;
             color: #6F6E6E;
+            transition: font-weight, 0.3s, ease-in-out;
 
             &-pink {
                 color: $colorPink;
@@ -343,12 +443,6 @@ button {
 
 .menu.nav-close .nav {
     transform: translateX(400px);
-.nav-close {
-    display: none;
-}
-
-.nav-open {
-    display: flex;
 }
 
 
@@ -504,7 +598,7 @@ button {
             @include zeroMargin();
             margin-bottom: 12px;
             @include headings();
-            font-size: 13px;
+            font-size: 20px;
             line-height: 16px;
         }
 
@@ -535,8 +629,32 @@ button {
         font-size: 16px;
         line-height: 19px;
         color: $colorPink;
+
+        transition-property: background-color, color;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
     }
 
+}
+
+.buy-btn {
+    margin: 15px 0;
+    padding: 5px 10px;
+    border: 1px solid #FF6A6A;
+    border-radius: 25px;
+    background-color: transparent;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $colorPink;
+}
+
+
+// js?
+.items__list-item:hover .buy-btn {
+    background-color: $colorPink;
+    color: $menu-color;
 }
 
 .items__browse-btn:hover {
@@ -584,7 +702,7 @@ button {
 }
 
 .sub {
-    background-image: url(img/default/sub-bg.png);
+    background-image: url(../img/default/sub-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
